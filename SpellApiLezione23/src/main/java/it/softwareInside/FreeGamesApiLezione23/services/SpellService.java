@@ -148,6 +148,11 @@ public class SpellService {
         }
     }
 
+    /**
+     * aggiunge un incantesimo casuale se non è già presente nel DB
+     * 
+     * @return
+     */
     public String addRandom() {
         try {
             Random casuale = new Random();
