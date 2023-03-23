@@ -1,0 +1,16 @@
+lista API: https://github.com/public-apis/public-apis (Auth: No apiKey: no)
+
+API -> classe POJO(@Enity) i dati della classe Pojo vanno salvati nel DB
+
+Service -> Download dei dati dall'API esterna e salva il dato nel DB
+
+Mostrare i dati con un'API interna
+
+________________________________________________________________
+ResponseEntity<Employee[]> response =
+  restTemplate.getForEntity(
+  "http://localhost:8080/employees/",
+  Employee[].class);
+Employee[] employees = response.getBody();
+________________________________________________________________
+
